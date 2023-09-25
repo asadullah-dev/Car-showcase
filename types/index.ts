@@ -40,7 +40,8 @@ export interface HomeProps {
 }
 export interface CustomFilterProps {
   title: string;
-  options: OptionsPros[];
+  options: { title: string; value: string }[];
+  setFilter: (filterValue: string) => void;
 }
 export interface ShowMoreProps {
   pageNumber: number;
